@@ -34,10 +34,12 @@ public class Produit implements Serializable {
 	private String codeProduit;
 	private String libelleProduit;
 	private float prix;
+	/*
 	@Temporal(TemporalType.DATE)
 	private Date dateCreation;
 	@Temporal(TemporalType.DATE)
 	private Date dateDerniereModification;
+	
 	@ManyToOne
 	@JsonIgnore
 	private Stock stock;
@@ -48,7 +50,7 @@ public class Produit implements Serializable {
 	@JsonIgnore
 	private CategorieProduit categorieProduit;
 	
-
+*/
 
 	
 
