@@ -18,7 +18,7 @@ import javax.persistence.OneToMany;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class IOperateurServiceTest {
+public class IOperateurServiceTest {
     @Autowired
     IOperateurService opService;
    // @Test
