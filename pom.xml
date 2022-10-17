@@ -97,7 +97,8 @@
 	<distributionManagement>
     <repository>
         <id>deployment</id>
-        <url>http://192.168.56.3:8081/repository/maven-releases/</url>
+	    <name>Nexus Repository</name>
+        <url>http://192.168.56.3:8081/repository/maven-snapshots/</url>
     </repository>
 </distributionManagement>
 </project>
