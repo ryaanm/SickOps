@@ -3,6 +3,7 @@ package com.esprit.examen.services;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.times;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
@@ -51,11 +52,11 @@ public class ProduiServiceImplTest {
     Produit p2 = new Produit(66L, "5681","produit5",120);
 
 
-    List<Produit> listProduits = new ArrayList<Produit>() {
-       
+    List<Produit> listProduits = new ArrayList<Produit>(){ 
+    	{
             add(new Produit(90L, "9687","produit2",30));
             add(new Produit(46L, "4503","produit3",70));
-        }
+    }
     };
     
     @Test
