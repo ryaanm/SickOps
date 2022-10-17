@@ -63,10 +63,10 @@ public class FactureRestController {
     }
 
     // http://localhost:8089/SpringMVC/facture/assignOperateurToFacture/1/1
-    @PutMapping(value = "/assignOperateurToFacture/{idOperateur}/{idFacture}")
-    public void assignOperateurToFacture(@PathVariable("idOperateur") Long idOperateur, @PathVariable("idFacture") Long idFacture) {
-        factureService.assignOperateurToFacture(idOperateur, idFacture);
-    }
+  //  @PutMapping(value = "/assignOperateurToFacture/{idOperateur}/{idFacture}")
+  //  public void assignOperateurToFacture(@PathVariable("idOperateur") Long idOperateur, @PathVariable("idFacture") Long idFacture) {
+   //     factureService.assignOperateurToFacture(idOperateur, idFacture);
+ //   }
 
     // http://localhost:8089/SpringMVC/facture/pourcentageRecouvrement/{startDate}/{endDate}
     @GetMapping(value = "/pourcentageRecouvrement/{startDate}/{endDate}")
