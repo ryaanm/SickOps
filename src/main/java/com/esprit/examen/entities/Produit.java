@@ -34,6 +34,7 @@ public class Produit implements Serializable {
 	private String codeProduit;
 	private String libelleProduit;
 	private float prix;
+	
 	/*
 	@Temporal(TemporalType.DATE)
 	private Date dateCreation;
