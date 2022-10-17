@@ -108,16 +108,23 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-
 			<plugin>
-
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				
+				<configuration>
+
+				</configuration>
 			</plugin>
 
 
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>deploymentRepo</id>
+			<name>Nexus Repository</name>
+			<url>http://192.168.0.17/:8081/repository/maven-snapshots/</url>
+		</repository>
+	</distributionManagement>
 
 </project>
