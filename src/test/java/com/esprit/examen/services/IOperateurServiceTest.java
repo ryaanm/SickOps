@@ -36,14 +36,7 @@ public class IOperateurServiceTest {
       //  opService.deleteOperateur(savedop.getIdOperateur());
 
     //}
-    @Test
-    public void assertTrueWithMessage() {
-         Operateur o = new Operateur(123l,"op","zeineb","zeineb");
-         Operateur savedop= opService.addOperateur(o);
-         List<Operateur> listOfop = opService.retrieveAllOperateurs();
-         assertTrue(listOfop.isEmpty(), "List of op is not empty!");
-
-    }
+   
 
     @Test
     public void assertNotNullWithMessage() {
@@ -52,5 +45,17 @@ public class IOperateurServiceTest {
 
         Operateur actualop = opService.retrieveOperateur(1l);
         assertNotNull(actualop, "op is null !");
+    }
+    @Test
+    public void assertEqualsWithMessage() {
+        Operateur o = new Operateur(123l,"op","zeineb","zeineb");
+        Operateur savedop= opService.addOperateur(o);
+        Operateur o1 = new Operateur(123l,"op","zeineb","zeineb");
+        Operateur savedop1= opService.addOperateur(o);
+
+        Operateur actualop = opService.retrieveOperateur(1l);
+
+        assertEquals(1l, actualop.getIdOperateur());
+
     }
 }
