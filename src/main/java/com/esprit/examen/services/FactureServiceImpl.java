@@ -103,13 +103,13 @@ public class FactureServiceImpl implements IFactureService {
 		return (List<Facture>) fournisseur.getFactures();
 	}
 
-	@Override
-	public void assignOperateurToFacture(Long idOperateur, Long idFacture) {
-		Facture facture = factureRepository.findById(idFacture).orElse(null);
-		Operateur operateur = operateurRepository.findById(idOperateur).orElse(null);
-		operateur.getFactures().add(facture);
-		operateurRepository.save(operateur);
-	}
+	//@Override
+	//public void assignOperateurToFacture(Long idOperateur, Long idFacture) {
+		//Facture facture = factureRepository.findById(idFacture).orElse(null);
+		//Operateur operateur = operateurRepository.findById(idOperateur).orElse(null);
+		//operateur.getFactures().add(facture);
+		//operateurRepository.save(operateur);
+	//}
 
 	@Override
 	public float pourcentageRecouvrement(Date startDate, Date endDate) {
