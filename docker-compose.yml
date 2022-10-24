@@ -1,4 +1,5 @@
-version: "3"
+version: "3.7"
+
 services:
   mysqldb:
    container_name: mysqldb
@@ -13,10 +14,10 @@ services:
      - /home/mysql/data:/var/lib/mysql --user 1000
 
   spring_app:
-   image: flawnrayen/achatapp_test
+   image: flawnrayen/achatapp_test 
+   restart: unless-stopped
    container_name: achatapp_test
-   restart: on-failure
    ports:
-    - 8089:8089
+    - 8082:8082
    depends_on:
     - mysqldb
