@@ -3,13 +3,13 @@ version: "3.7"
 services:
   mysqldb:
    container_name: mysqldb
-   image: mysql:8
+   image: mysql:5.6
    restart: unless-stopped
    ports:
     - 3307:3306
    environment:
     MYSQL_DATABASE: achatdb
-    MYSQL_ROOT_PASSWORD: MYSQL_ALLOW_EMPTY_PASSWORD
+    MYSQL_ROOT_PASSWORD: root
    volumes:
      - /home/mysql/data:/var/lib/mysql --user 1000
 
