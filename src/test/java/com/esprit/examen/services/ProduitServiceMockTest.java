@@ -82,40 +82,7 @@ public class ProduitServiceMockTest {
         System.out.println("3");
     }
 
-    @Test
-    public void testdeleteProduit(){
-        produitService.deleteProduit(66L);
-        Mockito.verify(produitRepository, times(1)).deleteById(66L);
-        System.out.println("4");
-    }
-///sss
-    @Test
-    public void testupdateProduit(){
-        Mockito.when(produitRepository.save(p1)).thenReturn(p1);
-        Produit produit1 = produitService.updateProduit(p1);
-        Mockito.verify(produitRepository, times(1)).save(Mockito.any(Produit.class));
-        System.out.println("5");
-    }
-
-    @Test
-   public void testassignProduitToStock(){
-
-        Stock stock = new Stock();
-        stock.setIdStock(1L);
-        stock.setLibelleStock("libelle3");
-        stock.setQte(20);
-        stock.setQteMin(1);
-
-        Mockito.when(produitRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(p1));
-        Mockito.when(sr.findById(Mockito.anyLong())).thenReturn(Optional.of(stock));
-        produitService.assignProduitToStock(55L,1L);
-
-       // Mockito.verify(sr, times(1)).save(Mockito.any(Stock.class));
-        Mockito.verify(produitRepository, times(1)).save(Mockito.any(Produit.class));
-
-        System.out.println("6");
-    }
-
+   
 
 
 

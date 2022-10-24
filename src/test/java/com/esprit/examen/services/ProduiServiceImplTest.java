@@ -40,29 +40,7 @@ public class ProduiServiceImplTest {
         Assertions.assertEquals(listProduits.size(), listProduits.size());
     }
 
-   /* @Order(3)
-    @Test
-    public void testRetrieveUser() {
-        Produit produitRetrieved = produitService.retrieveProduit(1L);
-        Assertions.assertEquals(1L, produitRetrieved.getIdProduit().longValue());
-    }*/
-
-    @Test
-    @Order(3)
-    public void testModifyProduit()   {
-
-      //  Produit produitUpdated  = produitService.updateProduit(p2);
-       // Assertions.assertEquals(p2.getCodeProduit(), produitUpdated.getCodeProduit());
-    }
-
-    @Test
-    @Order(5)
-    public void testDeleteUser() {
-
-      //  produitService.deleteProduit(6L);
-        Assertions.assertNull(produitService.retrieveProduit(2L));
-        produitRepository.deleteAll();
-    }
+  
 	
 	
 	
