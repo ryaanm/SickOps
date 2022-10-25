@@ -4,4 +4,3 @@ RUN curl -u admin:rayen -o achat.jar "https://192.168.56.3:8081/repositories/mav
 RUN bash -c 'touch /achat.jar'
 ENTRYPOINT ["java","-jar","/achat.jar"]
 EXPOSE 8082
-	
