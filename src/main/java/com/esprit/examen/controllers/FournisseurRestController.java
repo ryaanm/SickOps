@@ -61,6 +61,8 @@ public class FournisseurRestController {
 	public Fournisseur modifyFournisseur(@RequestBody Fournisseur fournisseur) {
 		return fournisseurService.updateFournisseur(fournisseur);
 	}
+	
+	
 
 	// http://localhost:8089/SpringMVC/fournisseur/assignSecteurActiviteToFournisseur/1/5
 		@PutMapping(value = "/assignSecteurActiviteToFournisseur/{idSecteurActivite}/{idFournisseur}")
