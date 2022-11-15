@@ -20,8 +20,6 @@ public class FactureRestController {
 
     @Autowired
     IFactureService factureService;
-
-    
     
     // http://localhost:8089/SpringMVC/facture/retrieve-all-factures
     @GetMapping("/retrieve-all-factures")
