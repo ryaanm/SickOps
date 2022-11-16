@@ -51,7 +51,6 @@ public class ProduitRestController {
 		produitService.deleteProduit(produitId);
 	}
 	
-	
 
 	// http://localhost:8089/SpringMVC/produit/modify-produit/{idCategorieProduit}/{idStock}
 	@PutMapping("/modify-produit")
